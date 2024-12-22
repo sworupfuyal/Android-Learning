@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="362dp"
+        android:layout_height="219dp"
+        android:contentDescription="ImageView"
+        android:src="@drawable/img_4" />
+
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textSize="40sp"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="40sp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="40sp"/>
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="40sp"/>
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="40sp"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="378dp"
+        android:layout_height="66dp"
+        android:textSize="40dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:textSize="40sp"/>
+
+    <CheckBox
+        android:id="@+id/termsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to terms and conditions"
+        android:textSize="35sp"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please click on I agree"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:textSize="40sp"/>
+
+</LinearLayout>
